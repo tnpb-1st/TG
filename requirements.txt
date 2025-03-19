@@ -1,0 +1,17 @@
+catboost
+imblearn
+ipywidgets
+joblib
+jupyter
+lightgbm
+matplotlib
+mlflow
+numpy
+optuna
+pandas
+plotly
+scikit-learn
+seaborn
+tqdm
+ucimlrepo
+xgboost
