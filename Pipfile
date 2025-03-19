@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+catboost = "*"
+imblearn = "*"
+ipywidgets = "*"
+joblib = "*"
+jupyter = "*"
+lightgbm = "*"
+matplotlib = "*"
+mlflow = "*"
+numpy = "*"
+optuna = "*"
+pandas = "*"
+plotly = "*"
+scikit-learn = "*"
+seaborn = "*"
+tqdm = "*"
+ucimlrepo = "*"
+xgboost = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
