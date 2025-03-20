@@ -23,6 +23,7 @@ tqdm = "*"
 ucimlrepo = "*"
 xgboost = "*"
 kaleido = "*"
+scikit-posthocs = "*"
 
 [dev-packages]
 
