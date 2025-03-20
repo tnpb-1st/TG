@@ -4,23 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+ipywidgets = "*"
+jupyter = "*"
+plotly = "*"
+black = {extras = ["jupyter"], version = "*"}
 catboost = "*"
 imblearn = "*"
-ipywidgets = "*"
 joblib = "*"
-jupyter = "*"
 lightgbm = "*"
 matplotlib = "*"
-mlflow = "*"
 numpy = "*"
 optuna = "*"
-pandas = "*"
-plotly = "*"
+mlflow = "*"
 scikit-learn = "*"
+pandas = "*"
 seaborn = "*"
 tqdm = "*"
 ucimlrepo = "*"
 xgboost = "*"
+kaleido = "*"
 
 [dev-packages]
 

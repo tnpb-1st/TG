@@ -1,0 +1,203 @@
+MELHORES FEATURES E AUC-ROC POR ALGORITMO
+================================================================================
+
+Modelo: Decision Trees
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.4552 ± 0.0585
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=11):
+  AUC-ROC: 0.5135 ± 0.0413
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+Algoritmo Genético:
+  AUC-ROC: 0.6526 ± 0.0311
+  Features: Race, Dental_Health, Age, Pain_Keeps_Patient_from_Sleeping, Physical_Health, Employment, Medication_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Uknown_Keeps_Patient_from_Sleeping, Mental_Health, Stress_Keeps_Patient_from_Sleeping, Gender, Bathroom_Needs_Keeps_Patient_from_Sleeping
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6526
+  Features: Race, Dental_Health, Age, Pain_Keeps_Patient_from_Sleeping, Physical_Health, Employment, Medication_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Uknown_Keeps_Patient_from_Sleeping, Mental_Health, Stress_Keeps_Patient_from_Sleeping, Gender, Bathroom_Needs_Keeps_Patient_from_Sleeping
+
+================================================================================
+
+Modelo: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.5377 ± 0.0482
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=10):
+  AUC-ROC: 0.5398 ± 0.0478
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race
+
+Algoritmo Genético:
+  AUC-ROC: 0.6531 ± 0.0335
+  Features: Medication_Keeps_Patient_from_Sleeping, Employment, Race, Pain_Keeps_Patient_from_Sleeping, Physical_Health, Age, Dental_Health, Prescription_Sleep_Medication, Mental_Health, Stress_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Gender
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6531
+  Features: Medication_Keeps_Patient_from_Sleeping, Employment, Race, Pain_Keeps_Patient_from_Sleeping, Physical_Health, Age, Dental_Health, Prescription_Sleep_Medication, Mental_Health, Stress_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Gender
+
+================================================================================
+
+Modelo: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.5006 ± 0.0190
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=9):
+  AUC-ROC: 0.5295 ± 0.0357
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race
+
+Algoritmo Genético:
+  AUC-ROC: 0.6459 ± 0.0134
+  Features: Employment, Bathroom_Needs_Keeps_Patient_from_Sleeping, Physical_Health, Race, Mental_Health, Dental_Health, Pain_Keeps_Patient_from_Sleeping, Age, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Gender, Prescription_Sleep_Medication, Trouble_Sleeping
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6459
+  Features: Employment, Bathroom_Needs_Keeps_Patient_from_Sleeping, Physical_Health, Race, Mental_Health, Dental_Health, Pain_Keeps_Patient_from_Sleeping, Age, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Gender, Prescription_Sleep_Medication, Trouble_Sleeping
+
+================================================================================
+
+Modelo: LightGBM
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.4901 ± 0.0471
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=8):
+  AUC-ROC: 0.5294 ± 0.0259
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication
+
+Algoritmo Genético:
+  AUC-ROC: 0.6467 ± 0.0298
+  Features: Prescription_Sleep_Medication, Race, Age, Employment, Pain_Keeps_Patient_from_Sleeping, Dental_Health, Medication_Keeps_Patient_from_Sleeping, Stress_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Physical_Health, Mental_Health, Gender, Trouble_Sleeping
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6467
+  Features: Prescription_Sleep_Medication, Race, Age, Employment, Pain_Keeps_Patient_from_Sleeping, Dental_Health, Medication_Keeps_Patient_from_Sleeping, Stress_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Physical_Health, Mental_Health, Gender, Trouble_Sleeping
+
+================================================================================
+
+Modelo: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.5688 ± 0.0460
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=9):
+  AUC-ROC: 0.5723 ± 0.0338
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race
+
+Algoritmo Genético:
+  AUC-ROC: 0.6541 ± 0.0269
+  Features: Medication_Keeps_Patient_from_Sleeping, Dental_Health, Physical_Health, Mental_Health, Prescription_Sleep_Medication, Bathroom_Needs_Keeps_Patient_from_Sleeping, Gender, Stress_Keeps_Patient_from_Sleeping, Race, Age, Pain_Keeps_Patient_from_Sleeping, Employment, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6541
+  Features: Medication_Keeps_Patient_from_Sleeping, Dental_Health, Physical_Health, Mental_Health, Prescription_Sleep_Medication, Bathroom_Needs_Keeps_Patient_from_Sleeping, Gender, Stress_Keeps_Patient_from_Sleeping, Race, Age, Pain_Keeps_Patient_from_Sleeping, Employment, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping
+
+================================================================================
+
+Modelo: Naive Bayes
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.5499 ± 0.0605
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=13):
+  AUC-ROC: 0.5499 ± 0.0605
+  Features: Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+Algoritmo Genético:
+  AUC-ROC: 0.6416 ± 0.0405
+  Features: Age, Physical_Health, Dental_Health, Stress_Keeps_Patient_from_Sleeping, Prescription_Sleep_Medication, Gender, Mental_Health, Medication_Keeps_Patient_from_Sleeping, Employment, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Race
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6416
+  Features: Age, Physical_Health, Dental_Health, Stress_Keeps_Patient_from_Sleeping, Prescription_Sleep_Medication, Gender, Mental_Health, Medication_Keeps_Patient_from_Sleeping, Employment, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Race
+
+================================================================================
+
+Modelo: Random Forests
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.4641 ± 0.0459
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=9):
+  AUC-ROC: 0.5184 ± 0.0401
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race
+
+Algoritmo Genético:
+  AUC-ROC: 0.6543 ± 0.0214
+  Features: Race, Age, Physical_Health, Medication_Keeps_Patient_from_Sleeping, Employment, Dental_Health, Prescription_Sleep_Medication, Stress_Keeps_Patient_from_Sleeping, Mental_Health, Pain_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Gender
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6543
+  Features: Race, Age, Physical_Health, Medication_Keeps_Patient_from_Sleeping, Employment, Dental_Health, Prescription_Sleep_Medication, Stress_Keeps_Patient_from_Sleeping, Mental_Health, Pain_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Gender
+
+================================================================================
+
+Modelo: Support Vector Machines
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.5592 ± 0.0408
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=8):
+  AUC-ROC: 0.5638 ± 0.0443
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication
+
+Algoritmo Genético:
+  AUC-ROC: 0.6499 ± 0.0202
+  Features: Physical_Health, Employment, Pain_Keeps_Patient_from_Sleeping, Prescription_Sleep_Medication, Dental_Health, Race, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Age, Gender, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Mental_Health
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6499
+  Features: Physical_Health, Employment, Pain_Keeps_Patient_from_Sleeping, Prescription_Sleep_Medication, Dental_Health, Race, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Age, Gender, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Mental_Health
+
+================================================================================
+
+Modelo: XGBoost
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.4986 ± 0.0446
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=8):
+  AUC-ROC: 0.5251 ± 0.0222
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication
+
+Algoritmo Genético:
+  AUC-ROC: 0.6559 ± 0.0300
+  Features: Dental_Health, Medication_Keeps_Patient_from_Sleeping, Race, Prescription_Sleep_Medication, Physical_Health, Employment, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Gender, Age, Stress_Keeps_Patient_from_Sleeping, Mental_Health, Bathroom_Needs_Keeps_Patient_from_Sleeping
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6559
+  Features: Dental_Health, Medication_Keeps_Patient_from_Sleeping, Race, Prescription_Sleep_Medication, Physical_Health, Employment, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Gender, Age, Stress_Keeps_Patient_from_Sleeping, Mental_Health, Bathroom_Needs_Keeps_Patient_from_Sleeping
+
+================================================================================
+
+Modelo: CatBoost
+--------------------------------------------------------------------------------
+Todas as Features (14):
+  AUC-ROC: 0.4708 ± 0.0345
+  Features: Age, Physical_Health, Mental_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Bathroom_Needs_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication, Race, Gender
+
+ANOVA (k=8):
+  AUC-ROC: 0.5193 ± 0.0367
+  Features: Physical_Health, Dental_Health, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Prescription_Sleep_Medication
+
+Algoritmo Genético:
+  AUC-ROC: 0.6465 ± 0.0259
+  Features: Prescription_Sleep_Medication, Physical_Health, Age, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Race, Bathroom_Needs_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Mental_Health, Gender, Dental_Health
+
+MELHOR MÉTODO: Algoritmo Genético
+  AUC-ROC: 0.6465
+  Features: Prescription_Sleep_Medication, Physical_Health, Age, Employment, Stress_Keeps_Patient_from_Sleeping, Medication_Keeps_Patient_from_Sleeping, Uknown_Keeps_Patient_from_Sleeping, Race, Bathroom_Needs_Keeps_Patient_from_Sleeping, Pain_Keeps_Patient_from_Sleeping, Trouble_Sleeping, Mental_Health, Gender, Dental_Health
+
+================================================================================
+
