@@ -1,0 +1,411 @@
+================================================================================
+RESULTADOS DA SELEÇÃO DE FEATURES COM SelectKBest (f_classif)
+Data e hora: 2025-03-21 17:25:42
+Valores de k testados: [6, 7, 8, 9, 10, 11, 12, 13, 14]
+================================================================================
+
+TIPO DE DADOS: ORIGINAL (sem SMOTE)
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4046
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 1.23 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4139
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 45.85 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4047
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 2.14 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4108
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 9.74 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+Melhor valor de k: 11
+F1-score médio: 0.4109
+Número de features: 11
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  11. Uknown_Keeps_Patient_from_Sleeping
+Tempo de execução: 4.19 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+Melhor valor de k: 12
+F1-score médio: 0.2618
+Número de features: 12
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  11. Mental_Health
+  12. Gender
+Tempo de execução: 1.03 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4151
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 22.27 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.3686
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 5.99 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4153
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+Tempo de execução: 59.01 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+Melhor valor de k: 6
+F1-score médio: 0.4090
+Número de features: 6
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+Tempo de execução: 55.52 segundos
+
+================================================================================
+MELHOR MODELO PARA ORIGINAL (sem SMOTE): XGBoost
+Valor de k: 7
+F1-score: 0.4153
+Features (7):
+  1. Physical_Health
+  2. Employment
+  3. Medication_Keeps_Patient_from_Sleeping
+  4. Prescription_Sleep_Medication
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Trouble_Sleeping
+  7. Race
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Valor k    | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 7          | 7          | 0.4046    
+Gradient Tree Boosting         | 7          | 7          | 0.4139    
+k-Nearest Neighbors            | 7          | 7          | 0.4047    
+LightGBM                       | 7          | 7          | 0.4108    
+Multinomial Logistic Regression | 11         | 11         | 0.4109    
+Naive Bayes                    | 12         | 12         | 0.2618    
+Random Forests                 | 7          | 7          | 0.4151    
+Support Vector Machines        | 7          | 7          | 0.3686    
+XGBoost                        | 7          | 7          | 0.4153    
+CatBoost                       | 6          | 6          | 0.4090    
+--------------------------------------------------------------------------------
+
+TIPO DE DADOS: SMOTE
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+Melhor valor de k: 6
+F1-score médio: 0.3371
+Número de features: 6
+Features:
+  1. Physical_Health
+  2. Stress_Keeps_Patient_from_Sleeping
+  3. Prescription_Sleep_Medication
+  4. Employment
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+Tempo de execução: 1.18 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+Melhor valor de k: 11
+F1-score médio: 0.3952
+Número de features: 11
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Mental_Health
+  11. Bathroom_Needs_Keeps_Patient_from_Sleeping
+Tempo de execução: 45.55 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+Melhor valor de k: 7
+F1-score médio: 0.4056
+Número de features: 7
+Features:
+  1. Physical_Health
+  2. Stress_Keeps_Patient_from_Sleeping
+  3. Prescription_Sleep_Medication
+  4. Employment
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Dental_Health
+Tempo de execução: 2.17 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+Melhor valor de k: 8
+F1-score médio: 0.3758
+Número de features: 8
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Stress_Keeps_Patient_from_Sleeping
+  4. Medication_Keeps_Patient_from_Sleeping
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Prescription_Sleep_Medication
+  7. Dental_Health
+  8. Trouble_Sleeping
+Tempo de execução: 14.88 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+Melhor valor de k: 11
+F1-score médio: 0.4288
+Número de features: 11
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Mental_Health
+  11. Bathroom_Needs_Keeps_Patient_from_Sleeping
+Tempo de execução: 4.79 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+Melhor valor de k: 12
+F1-score médio: 0.2487
+Número de features: 12
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  8. Trouble_Sleeping
+  9. Prescription_Sleep_Medication
+  10. Race
+  11. Mental_Health
+  12. Gender
+Tempo de execução: 1.15 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+Melhor valor de k: 10
+F1-score médio: 0.3709
+Número de features: 10
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Prescription_Sleep_Medication
+  8. Trouble_Sleeping
+  9. Race
+  10. Bathroom_Needs_Keeps_Patient_from_Sleeping
+Tempo de execução: 21.61 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+Melhor valor de k: 11
+F1-score médio: 0.4103
+Número de features: 11
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Mental_Health
+  11. Bathroom_Needs_Keeps_Patient_from_Sleeping
+Tempo de execução: 12.22 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+Melhor valor de k: 11
+F1-score médio: 0.3647
+Número de features: 11
+Features:
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Mental_Health
+  11. Bathroom_Needs_Keeps_Patient_from_Sleeping
+Tempo de execução: 253.96 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+Melhor valor de k: 8
+F1-score médio: 0.3630
+Número de features: 8
+Features:
+  1. Physical_Health
+  2. Employment
+  3. Stress_Keeps_Patient_from_Sleeping
+  4. Medication_Keeps_Patient_from_Sleeping
+  5. Pain_Keeps_Patient_from_Sleeping
+  6. Prescription_Sleep_Medication
+  7. Dental_Health
+  8. Trouble_Sleeping
+Tempo de execução: 66.41 segundos
+
+================================================================================
+MELHOR MODELO PARA SMOTE: Multinomial Logistic Regression
+Valor de k: 11
+F1-score: 0.4288
+Features (11):
+  1. Physical_Health
+  2. Dental_Health
+  3. Employment
+  4. Stress_Keeps_Patient_from_Sleeping
+  5. Medication_Keeps_Patient_from_Sleeping
+  6. Pain_Keeps_Patient_from_Sleeping
+  7. Trouble_Sleeping
+  8. Prescription_Sleep_Medication
+  9. Race
+  10. Mental_Health
+  11. Bathroom_Needs_Keeps_Patient_from_Sleeping
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Valor k    | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 6          | 6          | 0.3371    
+Gradient Tree Boosting         | 11         | 11         | 0.3952    
+k-Nearest Neighbors            | 7          | 7          | 0.4056    
+LightGBM                       | 8          | 8          | 0.3758    
+Multinomial Logistic Regression | 11         | 11         | 0.4288    
+Naive Bayes                    | 12         | 12         | 0.2487    
+Random Forests                 | 10         | 10         | 0.3709    
+Support Vector Machines        | 11         | 11         | 0.4103    
+XGBoost                        | 11         | 11         | 0.3647    
+CatBoost                       | 8          | 8          | 0.3630    
+--------------------------------------------------------------------------------
+

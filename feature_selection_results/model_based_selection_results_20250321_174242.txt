@@ -1,0 +1,502 @@
+================================================================================
+RESULTADOS DA SELEÇÃO DE FEATURES COM SelectFromModel
+Data e hora: 2025-03-21 17:42:42
+Parâmetros: max_features=14
+================================================================================
+
+TIPO DE DADOS: ORIGINAL (sem SMOTE)
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+F1-score médio: 0.3455
+F1-scores por fold: [0.3807, 0.3494, 0.3146, 0.2878, 0.3729, 0.2798, 0.393, 0.3923, 0.3902, 0.2944]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 0.18 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+F1-score médio: 0.3948
+F1-scores por fold: [0.4701, 0.3735, 0.3854, 0.3547, 0.4105, 0.3976, 0.3765, 0.3751, 0.4107, 0.3941]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 13.77 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 0.05 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+F1-score médio: 0.3678
+F1-scores por fold: [0.3727, 0.3966, 0.3219, 0.3124, 0.3974, 0.398, 0.3329, 0.369, 0.3897, 0.3878]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 2.73 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+F1-score médio: 0.4041
+F1-scores por fold: [0.4529, 0.3987, 0.4036, 0.407, 0.3694, 0.4133, 0.4198, 0.4003, 0.3998, 0.3763]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 1.39 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 0.06 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+F1-score médio: 0.3539
+F1-scores por fold: [0.3704, 0.3797, 0.3426, 0.3753, 0.3882, 0.3297, 0.3561, 0.3, 0.3638, 0.3334]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 6.61 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 1.10 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+F1-score médio: 0.3412
+F1-scores por fold: [0.3209, 0.3551, 0.3524, 0.311, 0.3665, 0.3329, 0.3197, 0.3399, 0.3563, 0.3578]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 9.62 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+F1-score médio: 0.3421
+F1-scores por fold: [0.3284, 0.3791, 0.3434, 0.318, 0.3297, 0.3481, 0.3408, 0.3251, 0.3736, 0.3349]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 23.56 segundos
+
+================================================================================
+MELHOR MODELO PARA ORIGINAL (sem SMOTE): Multinomial Logistic Regression
+F1-score: 0.4041
+Features (14):
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 14         | 0.3455    
+Gradient Tree Boosting         | 14         | 0.3948    
+k-Nearest Neighbors            | 0          | 0.0000    
+LightGBM                       | 14         | 0.3678    
+Multinomial Logistic Regression | 14         | 0.4041    
+Naive Bayes                    | 0          | 0.0000    
+Random Forests                 | 14         | 0.3539    
+Support Vector Machines        | 0          | 0.0000    
+XGBoost                        | 14         | 0.3412    
+CatBoost                       | 14         | 0.3421    
+--------------------------------------------------------------------------------
+
+TIPO DE DADOS: SMOTE
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+F1-score médio: 0.3153
+F1-scores por fold: [0.3643, 0.2832, 0.3146, 0.2811, 0.3305, 0.3892, 0.3313, 0.3272, 0.2658, 0.2658]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 0.20 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+F1-score médio: 0.3820
+F1-scores por fold: [0.4066, 0.4212, 0.3511, 0.3753, 0.3872, 0.4089, 0.3649, 0.3246, 0.3867, 0.3933]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 14.83 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator KNeighborsClassifier should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 0.06 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+F1-score médio: 0.3609
+F1-scores por fold: [0.3866, 0.3954, 0.373, 0.3081, 0.3744, 0.349, 0.2903, 0.3328, 0.4063, 0.393]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 3.77 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+F1-score médio: 0.4179
+F1-scores por fold: [0.435, 0.4436, 0.3614, 0.4512, 0.4496, 0.4922, 0.3816, 0.3787, 0.4195, 0.3658]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 1.95 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator GaussianNB should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 0.07 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+F1-score médio: 0.3446
+F1-scores por fold: [0.3738, 0.3994, 0.3154, 0.2898, 0.3755, 0.3627, 0.3708, 0.3005, 0.3303, 0.3279]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 6.65 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+  Erro no fold 1: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 2: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 3: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 4: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 5: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 6: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 7: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 8: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 9: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+  Erro no fold 10: when `importance_getter=='auto'`, the underlying estimator SVC should have `coef_` or `feature_importances_` attribute. Either pass a fitted estimator to feature selector or call fit before calling transform.
+F1-score médio: 0.0000
+F1-scores por fold: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Número de features selecionadas: 0
+Features mais importantes:
+Tempo de execução: 2.27 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+F1-score médio: 0.3465
+F1-scores por fold: [0.3703, 0.3896, 0.3795, 0.3188, 0.3333, 0.3268, 0.3018, 0.3034, 0.3763, 0.3649]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 5.21 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+F1-score médio: 0.3384
+F1-scores por fold: [0.3209, 0.4398, 0.3226, 0.309, 0.3227, 0.3213, 0.3128, 0.3394, 0.3638, 0.332]
+Número de features selecionadas: 14
+Features mais importantes:
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+Tempo de execução: 26.50 segundos
+
+================================================================================
+MELHOR MODELO PARA SMOTE: Multinomial Logistic Regression
+F1-score: 0.4179
+Features (14):
+  1. Age
+  2. Physical_Health
+  3. Mental_Health
+  4. Dental_Health
+  5. Employment
+  6. Stress_Keeps_Patient_from_Sleeping
+  7. Medication_Keeps_Patient_from_Sleeping
+  8. Pain_Keeps_Patient_from_Sleeping
+  9. Bathroom_Needs_Keeps_Patient_from_Sleeping
+  10. Uknown_Keeps_Patient_from_Sleeping
+  11. Trouble_Sleeping
+  12. Prescription_Sleep_Medication
+  13. Race
+  14. Gender
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 14         | 0.3153    
+Gradient Tree Boosting         | 14         | 0.3820    
+k-Nearest Neighbors            | 0          | 0.0000    
+LightGBM                       | 14         | 0.3609    
+Multinomial Logistic Regression | 14         | 0.4179    
+Naive Bayes                    | 0          | 0.0000    
+Random Forests                 | 14         | 0.3446    
+Support Vector Machines        | 0          | 0.0000    
+XGBoost                        | 14         | 0.3465    
+CatBoost                       | 14         | 0.3384    
+--------------------------------------------------------------------------------
+

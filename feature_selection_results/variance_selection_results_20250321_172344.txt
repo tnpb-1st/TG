@@ -1,0 +1,311 @@
+================================================================================
+RESULTADOS DA SELEÇÃO DE FEATURES POR VARIÂNCIA
+Data e hora: 2025-03-21 17:23:44
+Limiares testados: [0.33, 0.5, 0.75]
+================================================================================
+
+TIPO DE DADOS: ORIGINAL (sem SMOTE)
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4177
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 0.33 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4328
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 13.98 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4061
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 0.63 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4006
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 2.69 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.3980
+Número de features: 6
+Features:
+  1. Mental_Health
+  2. Employment
+  3. Race
+  4. Trouble_Sleeping
+  5. Dental_Health
+  6. Physical_Health
+Tempo de execução: 1.16 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.4314
+Número de features: 6
+Features:
+  1. Mental_Health
+  2. Employment
+  3. Race
+  4. Trouble_Sleeping
+  5. Dental_Health
+  6. Physical_Health
+Tempo de execução: 0.35 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4270
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 6.44 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.3440
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 1.85 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4274
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 11.93 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.4349
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 15.10 segundos
+
+================================================================================
+MELHOR MODELO PARA ORIGINAL (sem SMOTE): CatBoost
+Limiar: 0.5
+F1-score: 0.4349
+Features (4):
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Limiar     | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 0.500      | 4          | 0.4177    
+Gradient Tree Boosting         | 0.500      | 4          | 0.4328    
+k-Nearest Neighbors            | 0.500      | 4          | 0.4061    
+LightGBM                       | 0.500      | 4          | 0.4006    
+Multinomial Logistic Regression | 0.330      | 6          | 0.3980    
+Naive Bayes                    | 0.330      | 6          | 0.4314    
+Random Forests                 | 0.500      | 4          | 0.4270    
+Support Vector Machines        | 0.500      | 4          | 0.3440    
+XGBoost                        | 0.500      | 4          | 0.4274    
+CatBoost                       | 0.500      | 4          | 0.4349    
+--------------------------------------------------------------------------------
+
+TIPO DE DADOS: SMOTE
+================================================================================
+
+MODELO: Decision Trees
+--------------------------------------------------------------------------------
+Melhor limiar: 0.75
+F1-score médio: 0.3587
+Número de features: 3
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+Tempo de execução: 0.32 segundos
+
+MODELO: Gradient Tree Boosting
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.3841
+Número de features: 5
+Features:
+  1. Mental_Health
+  2. Race
+  3. Trouble_Sleeping
+  4. Dental_Health
+  5. Physical_Health
+Tempo de execução: 14.50 segundos
+
+MODELO: k-Nearest Neighbors
+--------------------------------------------------------------------------------
+Melhor limiar: 0.5
+F1-score médio: 0.3981
+Número de features: 4
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+Tempo de execução: 0.61 segundos
+
+MODELO: LightGBM
+--------------------------------------------------------------------------------
+Melhor limiar: 0.75
+F1-score médio: 0.3624
+Número de features: 3
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+Tempo de execução: 3.70 segundos
+
+MODELO: Multinomial Logistic Regression
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.3971
+Número de features: 5
+Features:
+  1. Mental_Health
+  2. Race
+  3. Trouble_Sleeping
+  4. Dental_Health
+  5. Physical_Health
+Tempo de execução: 0.90 segundos
+
+MODELO: Naive Bayes
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.3780
+Número de features: 5
+Features:
+  1. Mental_Health
+  2. Race
+  3. Trouble_Sleeping
+  4. Dental_Health
+  5. Physical_Health
+Tempo de execução: 0.31 segundos
+
+MODELO: Random Forests
+--------------------------------------------------------------------------------
+Melhor limiar: 0.75
+F1-score médio: 0.3636
+Número de features: 3
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+Tempo de execução: 6.72 segundos
+
+MODELO: Support Vector Machines
+--------------------------------------------------------------------------------
+Melhor limiar: 0.33
+F1-score médio: 0.3827
+Número de features: 5
+Features:
+  1. Mental_Health
+  2. Race
+  3. Trouble_Sleeping
+  4. Dental_Health
+  5. Physical_Health
+Tempo de execução: 3.42 segundos
+
+MODELO: XGBoost
+--------------------------------------------------------------------------------
+Melhor limiar: 0.75
+F1-score médio: 0.3701
+Número de features: 3
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+Tempo de execução: 15.64 segundos
+
+MODELO: CatBoost
+--------------------------------------------------------------------------------
+Melhor limiar: 0.75
+F1-score médio: 0.3673
+Número de features: 3
+Features:
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+Tempo de execução: 17.57 segundos
+
+================================================================================
+MELHOR MODELO PARA SMOTE: k-Nearest Neighbors
+Limiar: 0.5
+F1-score: 0.3981
+Features (4):
+  1. Mental_Health
+  2. Race
+  3. Dental_Health
+  4. Physical_Health
+================================================================================
+
+
+TABELA COMPARATIVA DOS MODELOS:
+--------------------------------------------------------------------------------
+Modelo                         | Limiar     | Features   | F1-Score  
+--------------------------------------------------------------------------------
+Decision Trees                 | 0.750      | 3          | 0.3587    
+Gradient Tree Boosting         | 0.330      | 5          | 0.3841    
+k-Nearest Neighbors            | 0.500      | 4          | 0.3981    
+LightGBM                       | 0.750      | 3          | 0.3624    
+Multinomial Logistic Regression | 0.330      | 5          | 0.3971    
+Naive Bayes                    | 0.330      | 5          | 0.3780    
+Random Forests                 | 0.750      | 3          | 0.3636    
+Support Vector Machines        | 0.330      | 5          | 0.3827    
+XGBoost                        | 0.750      | 3          | 0.3701    
+CatBoost                       | 0.750      | 3          | 0.3673    
+--------------------------------------------------------------------------------
+
